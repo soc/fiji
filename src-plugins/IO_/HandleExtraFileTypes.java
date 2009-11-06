@@ -302,7 +302,9 @@ public class HandleExtraFileTypes extends ImagePlus implements PlugIn {
 		// try opening the file with LOCI Bio-Formats plugin - always check this last!
 		if (o==null && width != IMAGE_OPENED) {
 			// Call Bio-Formats in batch mode if File>Import>Image Sequence is opening this file.
-			if( IJ.getVersion().compareTo("1.38j")>=0  && IJ.redirectingErrorMessages())
+			// OR if we are in macro batch mode
+			if( (IJ.getVersion().compareTo("1.38j")>=0  && IJ.redirectingErrorMessages())
+				|| ij.macro.Interpreter.isBatchMode() )
 				return tryLociBatch(directory, name);
 			else return tryLociInteractive(path);
 		}
