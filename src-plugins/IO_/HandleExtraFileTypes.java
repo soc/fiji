@@ -358,6 +358,8 @@ public class HandleExtraFileTypes extends ImagePlus implements PlugIn {
 		      IJ.showStatus("Constructing image");
 		      ImagePlus imp = new ImagePlus(name, stack);
 		      IJ.showStatus("");
+			width = IMAGE_OPENED;
+			return imp;
 		    }
 		    catch (FormatException exc) {
 		      IJ.error("Sorry, an error occurred: " + exc.getMessage());
