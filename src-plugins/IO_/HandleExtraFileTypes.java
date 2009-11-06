@@ -300,77 +300,73 @@ public class HandleExtraFileTypes extends ImagePlus implements PlugIn {
 		if (! new File(path).exists()) return null;
 
 		// try opening the file with LOCI Bio-Formats plugin - always check this last!
-		// Do not call Bio-Formats if File>Import>Image Sequence is opening this file.
 		if (o==null && width != IMAGE_OPENED) {
-			return tryLoci(directory, name, path);
+			// Call Bio-Formats in batch mode if File>Import>Image Sequence is opening this file.
+			if( IJ.getVersion().compareTo("1.38j")>=0  && IJ.redirectingErrorMessages())
+				return tryLociBatch(directory, name);
+			else return tryLociInteractive(path);
 		}
 
 		return null;
 		
 	} // openImage
-	
-	private ImagePlus tryLoci(String directory, String name, String path) {
-		if( IJ.getVersion().compareTo("1.38j")<0 || !IJ.redirectingErrorMessages() )
-		{
-			// Use LOCI with dialog box
-			Object loci = IJ.runPlugIn("loci.plugins.LociImporter", path);
-			if (loci!=null) {
-				// plugin exists and was launched
-				try {
-					// check whether plugin was successful
-					Class c = loci.getClass();
-					boolean success = c.getField("success").getBoolean(loci);
-					boolean canceled = c.getField("canceled").getBoolean(loci);
-					if (success || canceled) {
-						width = IMAGE_OPENED;
-						return null;
-					}
+
+	private ImagePlus tryLociInteractive(String path) {
+		// Use LOCI with dialog box
+		Object loci = IJ.runPlugIn("loci.plugins.LociImporter", path);
+		if (loci!=null) {
+			// plugin exists and was launched
+			try {
+				// check whether plugin was successful
+				Class c = loci.getClass();
+				boolean success = c.getField("success").getBoolean(loci);
+				boolean canceled = c.getField("canceled").getBoolean(loci);
+				if (success || canceled) {
+					width = IMAGE_OPENED;
 				}
-				catch (Exception exc) { }
-			}				
-		} else
-		{
-			// Use loci w/o dialog box, returning an ImagePlus
-			// To be honest, I think I would rather ALWAYS do this with HEFT
-			// and leave people to request the LOCI dialog box from the plugins menu
-			// if that's what they want
-			
-			// Snippet copied more or less verbatim from
-			// https://skyking.microscopy.wisc.edu/trac/java/browser/trunk/components/loci-plugins/utils/Read_Image.java
-			
-			// Make a new ImagePlus reader
-			ImagePlusReader r = new ImagePlusReader(
-		      new ChannelSeparator(ImagePlusReader.makeImageReader()));
-			// Now try loading the data
-		    try {
-		      IJ.showStatus("Examining file " + name);
-		      r.setId(directory+name);
-		      int num = r.getImageCount();
-		      int width = r.getSizeX();
-		      int height = r.getSizeY();
-		      ImageStack stack = new ImageStack(width, height);
-		      for (int i=0; i<num; i++) {
-		        IJ.showStatus("Reading image plane #" + (i + 1) + "/" + num);
-		        ImageProcessor ip = r.openProcessors(i)[0];
-		        stack.addSlice("" + (i + 1), ip);
-		      }
-		      r.close();
-		      IJ.showStatus("Constructing image");
-		      ImagePlus imp = new ImagePlus(name, stack);
-		      IJ.showStatus("");
+			}
+			catch (Exception exc) { }
+		}
+		return null;
+	}
+
+	private ImagePlus tryLociBatch(String directory, String name) {
+		// Use loci w/o dialog box, returning an ImagePlus
+
+		// Snippet copied more or less verbatim from
+		// https://skyking.microscopy.wisc.edu/trac/java/browser/trunk/components/loci-plugins/utils/Read_Image.java
+
+		// Make a new ImagePlus reader
+		ImagePlusReader r = new ImagePlusReader(
+			new ChannelSeparator(ImagePlusReader.makeImageReader()));
+		// Now try loading the data
+		try {
+			IJ.showStatus("Examining file " + name);
+			r.setId(directory+name);
+			int num = r.getImageCount();
+			int width = r.getSizeX();
+			int height = r.getSizeY();
+			ImageStack stack = new ImageStack(width, height);
+			for (int i=0; i<num; i++) {
+			  IJ.showStatus("Reading image plane #" + (i + 1) + "/" + num);
+			  ImageProcessor ip = r.openProcessors(i)[0];
+			  stack.addSlice("" + (i + 1), ip);
+			}
+			r.close();
+			IJ.showStatus("Constructing image");
+			ImagePlus imp = new ImagePlus(name, stack);
+			IJ.showStatus("");
 			width = IMAGE_OPENED;
 			return imp;
-		    }
-		    catch (FormatException exc) {
-		      IJ.error("Sorry, an error occurred: " + exc.getMessage());
-		    }
-		    catch (IOException exc) {
-		      IJ.error("Sorry, an error occurred: " + exc.getMessage());
-		    }		    
 		}
-		return null;		
+		catch (FormatException exc) {
+			IJ.error("Sorry, an error occurred: " + exc.getMessage());
+		}
+		catch (IOException exc) {
+			IJ.error("Sorry, an error occurred: " + exc.getMessage());
+		}
+		return null;
 	}
-	
 
 	/**
 	* Attempts to open the specified path with the given plugin. If the
