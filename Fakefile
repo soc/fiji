@@ -356,7 +356,6 @@ CLASSPATH(plugins/loci_tools.jar)=jars/ij.jar
 CLASSPATH(jars/batik.jar)=jars/jacl.jar:plugins/loci_tools.jar:jars/jython.jar
 CLASSPATH(jars/ij.jar)=jars/javac.jar
 CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.jar
-CLASSPATH(jars/wavelets.jar)=jars/ij.jar
 CLASSPATH(jars/imageware.jar)=jars/ij.jar
 CLASSPATH(plugins/Extended_Depth_Field.jar)=jars/ij.jar:jars/imageware.jar:jars/wavelets.jar
 CLASSPATH(plugins/panorama_.jar)=jars/ij.jar:jars/mpicbg.jar:/jars/mpicbg_.jar
@@ -474,6 +473,7 @@ plugins/Linear_Kuwahara.jar <- src-plugins/Linear_Kuwahara/pom.xml
 plugins/Thread_Killer.jar <- src-plugins/Thread_Killer/pom.xml
 plugins/Samples_.jar <- src-plugins/Samples_/pom.xml
 jars/mij.jar <- src-plugins/mij/pom.xml
+jars/wavelets.jar <- src-plugins/wavelets/pom.xml
 
 # pre-Java5 generics ;-)
 
