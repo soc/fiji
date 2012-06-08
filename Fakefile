@@ -359,7 +359,6 @@ CLASSPATH(plugins/loci_tools.jar)=jars/ij.jar
 CLASSPATH(jars/batik.jar)=jars/jacl.jar:plugins/loci_tools.jar:jars/jython.jar
 CLASSPATH(jars/ij.jar)=jars/javac.jar
 CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.jar
-CLASSPATH(plugins/Snakuscule_.jar)=jars/ij.jar
 CLASSPATH(jars/mij.jar)=jars/ij.jar
 CLASSPATH(plugins/Linear_Kuwahara.jar)=jars/ij.jar
 CLASSPATH(plugins/Thread_Killer.jar)=jars/ij.jar
@@ -473,6 +472,7 @@ plugins/PointPicker_.jar <- src-plugins/PointPicker_/pom.xml
 plugins/SheppLogan_.jar <- src-plugins/SheppLogan_/pom.xml
 plugins/StackReg_.jar <- src-plugins/StackReg_/pom.xml
 plugins/UnwarpJ_.jar <- src-plugins/UnwarpJ_/pom.xml
+plugins/Snakuscule_.jar <- src-plugins/Snakuscule_/pom.xml
 
 # pre-Java5 generics ;-)
 
