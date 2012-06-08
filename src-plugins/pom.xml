@@ -38,6 +38,7 @@
 		<module>Skeletonize3D_</module>
 		<module>AnalyzeSkeleton_</module>
 		<module>VIB_</module>
+		<module>Simple_Neurite_Tracer</module>
 	</modules>
 
 	<properties>
