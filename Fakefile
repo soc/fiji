@@ -363,7 +363,6 @@ CLASSPATH(plugins/TopoJ_.jar)=jars/ij.jar:jars/Jama.jar
 CLASSPATH(plugins/TransformJ_.jar)=jars/ij.jar:jars/imagescience.jar
 CLASSPATH(plugins/FeatureJ_.jar)=jars/ij.jar:jars/imagescience.jar
 CLASSPATH(plugins/RandomJ_.jar)=jars/ij.jar:jars/imagescience.jar
-CLASSPATH(plugins/IsoData_Classifier.jar)=jars/ij.jar
 CLASSPATH(plugins/CPU_Meter.jar)=jars/jna.jar:jars/ij.jar
 CLASSPATH(jars/autocomplete.jar)=jars/rsyntaxtextarea.jar
 CLASSPATH(jars/jython.jar)=jars/junit.jar:jars/jna.jar
@@ -476,6 +475,7 @@ plugins/3D_Objects_Counter.jar <- src-plugins/3D_Objects_Counter/pom.xml
 plugins/Anisotropic_Diffusion_2D.jar <- src-plugins/Anisotropic_Diffusion_2D/pom.xml
 jars/imagescience.jar <- src-plugins/imagescience/pom.xml
 plugins/Trainable_Segmentation.jar <- src-plugins/Trainable_Segmentation/pom.xml
+plugins/IsoData_Classifier.jar <- src-plugins/IsoData_Classifier/pom.xml
 
 # pre-Java5 generics ;-)
 

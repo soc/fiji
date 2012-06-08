@@ -90,6 +90,7 @@
 		<module>Anisotropic_Diffusion_2D</module>
 		<module>imagescience</module>
 		<module>Trainable_Segmentation</module>
+		<module>IsoData_Classifier</module>
 	</modules>
 
 	<properties>
