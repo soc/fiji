@@ -372,7 +372,6 @@ CLASSPATH(plugins/Arrow_.jar)=jars/ij.jar:jars/fiji-lib.jar
 CLASSPATH(plugins/TransformJ_.jar)=jars/ij.jar:jars/imagescience.jar
 CLASSPATH(plugins/FeatureJ_.jar)=jars/ij.jar:jars/imagescience.jar
 CLASSPATH(plugins/RandomJ_.jar)=jars/ij.jar:jars/imagescience.jar
-CLASSPATH(plugins/Auto_Threshold.jar)=jars/ij.jar
 CLASSPATH(plugins/Colocalisation_Analysis.jar)=jars/ij.jar:jars/imglib.jar:jars/imglib-ij.jar:jars/imglib-algorithms.jar:jars/junit.jar:jars/itextpdf.jar:jars/fiji-lib.jar
 CLASSPATH(plugins/Gray_Morphology.jar)=jars/ij.jar
 CLASSPATH(plugins/IsoData_Classifier.jar)=jars/ij.jar
@@ -478,6 +477,7 @@ plugins/Series_Labeler.jar <- src-plugins/Series_Labeler/pom.xml
 plugins/Statistical_Region_Merging.jar <- src-plugins/Statistical_Region_Merging/pom.xml
 jars/fake.jar <- src-plugins/fake/pom.xml
 plugins/Refresh_Javas.jar <- src-plugins/Refresh_Javas/pom.xml
+plugins/Auto_Threshold.jar <- src-plugins/Auto_Threshold/pom.xml
 
 # pre-Java5 generics ;-)
 

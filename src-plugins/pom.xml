@@ -71,6 +71,7 @@
 		<module>Statistical_Region_Merging</module>
 		<module>fake</module>
 		<module>Refresh_Javas</module>
+		<module>Auto_Threshold</module>
 	</modules>
 
 	<properties>
