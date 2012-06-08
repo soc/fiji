@@ -75,6 +75,7 @@
 		<module>Arrow_</module>
 		<module>Stack_Manipulation</module>
 		<module>FlowJ_</module>
+		<module>PIV_analyser</module>
 	</modules>
 
 	<properties>
