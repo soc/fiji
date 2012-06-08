@@ -76,6 +76,7 @@
 		<module>Stack_Manipulation</module>
 		<module>FlowJ_</module>
 		<module>PIV_analyser</module>
+		<module>Record_Screen</module>
 	</modules>
 
 	<properties>

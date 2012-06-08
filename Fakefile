@@ -335,7 +335,6 @@ libs[] <- jars/test-fiji.jar jars/zs.jar jars/VIB-lib.jar jars/Jama.jar \
 	jars/pal-optimization.jar jars/Updater_Fix.jar plugins/JNI_Example.jar \
 	plugins/FFMPEG_IO.jar \
 
-plugins/Record_Screen.jar <- src-plugins/Record_Screen/ src-plugins/Record_Screen/**/*
 
 plugins/Trainable_Segmentation.jar <- src-plugins/Trainable_Segmentation/**/*java src-plugins/Trainable_Segmentation/trainableSegmentation/images/*png src-plugins/Trainable_Segmentation/*
 
@@ -478,6 +477,7 @@ plugins/Arrow_.jar <- src-plugins/Arrow_/pom.xml
 plugins/Stack_Manipulation.jar <- src-plugins/Stack_Manipulation/pom.xml
 plugins/FlowJ_.jar <- src-plugins/FlowJ_/pom.xml
 plugins/PIV_analyser.jar <- src-plugins/PIV_analyser/pom.xml
+plugins/Record_Screen.jar <- src-plugins/Record_Screen/pom.xml
 
 # pre-Java5 generics ;-)
 
