@@ -368,7 +368,6 @@ CLASSPATH(plugins/SPIM_Registration.jar)=jars/ij.jar:$JAVA3D_JARS:jars/imglib.ja
 CLASSPATH(plugins/Descriptor_based_registration.jar)=jars/ij.jar:jars/imglib.jar:jars/mpicbg.jar:jars/fiji-lib.jar:plugins/Fiji_Plugins.jar:jars/VIB-lib.jar:jars/Jama.jar:jars/imglib-algorithms.jar:jars/imglib-ij.jar:jars/imglib-io.jar:plugins/SPIM_Registration.jar:plugins/Stitching_.jar:$JAVA3D_JARS
 CLASSPATH(plugins/TopoJ_.jar)=jars/ij.jar:jars/Jama.jar
 CLASSPATH(jars/imagescience.jar)=jars/ij.jar:plugins/Image_5D.jar
-CLASSPATH(plugins/Arrow_.jar)=jars/ij.jar:jars/fiji-lib.jar
 CLASSPATH(plugins/TransformJ_.jar)=jars/ij.jar:jars/imagescience.jar
 CLASSPATH(plugins/FeatureJ_.jar)=jars/ij.jar:jars/imagescience.jar
 CLASSPATH(plugins/RandomJ_.jar)=jars/ij.jar:jars/imagescience.jar
@@ -478,6 +477,7 @@ plugins/Statistical_Region_Merging.jar <- src-plugins/Statistical_Region_Merging
 jars/fake.jar <- src-plugins/fake/pom.xml
 plugins/Refresh_Javas.jar <- src-plugins/Refresh_Javas/pom.xml
 plugins/Auto_Threshold.jar <- src-plugins/Auto_Threshold/pom.xml
+plugins/Arrow_.jar <- src-plugins/Arrow_/pom.xml
 
 # pre-Java5 generics ;-)
 

@@ -72,6 +72,7 @@
 		<module>fake</module>
 		<module>Refresh_Javas</module>
 		<module>Auto_Threshold</module>
+		<module>Arrow_</module>
 	</modules>
 
 	<properties>
