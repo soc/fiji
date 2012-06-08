@@ -107,6 +107,7 @@
 		<module>PointPicker_</module>
 		<module>SheppLogan_</module>
 		<module>StackReg_</module>
+		<module>UnwarpJ_</module>
 	</modules>
 
 	<properties>
