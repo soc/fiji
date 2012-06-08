@@ -45,6 +45,7 @@
 		<module>register_virtual_stack_slices</module>
 		<module>Siox_Segmentation</module>
 		<module>registration_3d</module>
+		<module>IO_</module>
 	</modules>
 
 	<properties>
