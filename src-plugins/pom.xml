@@ -49,6 +49,7 @@
 		<module>CLI_</module>
 		<module>Javascript_</module>
 		<module>LSM_Reader</module>
+		<module>LSM_Toolbox</module>
 	</modules>
 
 	<properties>
