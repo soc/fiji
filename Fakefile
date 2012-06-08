@@ -357,7 +357,6 @@ CLASSPATH(jars/batik.jar)=jars/jacl.jar:plugins/loci_tools.jar:jars/jython.jar
 CLASSPATH(jars/ij.jar)=jars/javac.jar
 CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.jar
 CLASSPATH(jars/mij.jar)=jars/ij.jar
-CLASSPATH(plugins/Linear_Kuwahara.jar)=jars/ij.jar
 CLASSPATH(plugins/Thread_Killer.jar)=jars/ij.jar
 CLASSPATH(jars/wavelets.jar)=jars/ij.jar
 CLASSPATH(jars/imageware.jar)=jars/ij.jar
@@ -473,6 +472,7 @@ plugins/Snakuscule_.jar <- src-plugins/Snakuscule_/pom.xml
 plugins/TransformJ_.jar <- src-plugins/TransformJ_/pom.xml
 plugins/FeatureJ_.jar <- src-plugins/FeatureJ_/pom.xml
 plugins/RandomJ_.jar <- src-plugins/RandomJ_/pom.xml
+plugins/Linear_Kuwahara.jar <- src-plugins/Linear_Kuwahara/pom.xml
 
 # pre-Java5 generics ;-)
 
