@@ -396,7 +396,6 @@ CLASSPATH(plugins/Series_Labeler.jar)=jars/ij.jar
 CLASSPATH(plugins/Gray_Morphology.jar)=jars/ij.jar
 CLASSPATH(plugins/IsoData_Classifier.jar)=jars/ij.jar
 CLASSPATH(plugins/ToAST_.jar)=jars/ij.jar
-CLASSPATH(plugins/AnalyzeSkeleton_.jar)=jars/ij.jar
 CLASSPATH(plugins/CPU_Meter.jar)=jars/jna.jar:jars/ij.jar
 CLASSPATH(plugins/M_I_P.jar)=jars/ij.jar
 CLASSPATH(plugins/level_sets.jar)=jars/ij.jar
@@ -480,6 +479,7 @@ plugins/3D_Viewer.jar <- src-plugins/3D_Viewer/pom.xml
 plugins/bUnwarpJ_.jar <- src-plugins/bUnwarpJ_/pom.xml
 plugins/Lasso_and_Blow_Tool.jar <- src-plugins/Lasso_and_Blow_Tool/pom.xml
 plugins/Skeletonize3D_.jar <- src-plugins/Skeletonize3D_/pom.xml
+plugins/AnalyzeSkeleton_.jar <- src-plugins/AnalyzeSkeleton_/pom.xml
 
 # pre-Java5 generics ;-)
 
