@@ -102,6 +102,7 @@
 		<module>CPU_Meter</module>
 		<module>Graph_Cut</module>
 		<module>TopoJ_</module>
+		<module>Differentials_</module>
 	</modules>
 
 	<properties>

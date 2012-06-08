@@ -362,7 +362,6 @@ CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.
 CLASSPATH(plugins/Snakuscule_.jar)=jars/ij.jar
 CLASSPATH(plugins/UnwarpJ_.jar)=jars/ij.jar
 CLASSPATH(jars/mij.jar)=jars/ij.jar
-CLASSPATH(plugins/Differentials_.jar)=jars/ij.jar
 CLASSPATH(plugins/StackReg_.jar)=jars/ij.jar
 CLASSPATH(plugins/PointPicker_.jar)=jars/ij.jar
 CLASSPATH(plugins/Linear_Kuwahara.jar)=jars/ij.jar
@@ -473,6 +472,7 @@ plugins/QuickPALM_.jar <- src-plugins/QuickPALM_/pom.xml
 plugins/CPU_Meter.jar <- src-plugins/CPU_Meter/pom.xml
 plugins/Graph_Cut.jar <- src-plugins/Graph_Cut/pom.xml
 plugins/TopoJ_.jar <- src-plugins/TopoJ_/pom.xml
+plugins/Differentials_.jar <- src-plugins/Differentials_/pom.xml
 
 # pre-Java5 generics ;-)
 
