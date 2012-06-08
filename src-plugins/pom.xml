@@ -60,6 +60,7 @@
 		<module>Volume_Viewer</module>
 		<module>IJ_Robot</module>
 		<module>Fiji_Updater</module>
+		<module>Stitching_</module>
 	</modules>
 
 	<properties>
