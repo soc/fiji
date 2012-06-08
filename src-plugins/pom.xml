@@ -109,6 +109,7 @@
 		<module>StackReg_</module>
 		<module>UnwarpJ_</module>
 		<module>Snakuscule_</module>
+		<module>TransformJ_</module>
 	</modules>
 
 	<properties>
