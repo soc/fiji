@@ -131,6 +131,7 @@
 		<module>Threshold_Colour</module>
 		<module>Helmholtz_Analysis</module>
 		<module>Descriptor_based_registration</module>
+		<module>Reconstruct_Reader</module>
 	</modules>
 
 	<properties>
