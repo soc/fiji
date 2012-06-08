@@ -341,7 +341,6 @@ plugins/Trainable_Segmentation.jar <- src-plugins/Trainable_Segmentation/**/*jav
 
 mainClass(jars/fiji-compat.jar)=fiji.Main
 
-MAINCLASS(jars/javac.jar)=com.sun.tools.javac.Main
 
 CLASSPATH(jars/fiji-scripting.jar)=jars/ij.jar:jars/jython.jar:jars/fiji-compat.jar:jars/bsh.jar:jars/js.jar
 CLASSPATH(plugins/Refresh_Javas.jar)=jars/ij.jar:jars/fiji-scripting.jar:jars/fake.jar:jars/fiji-compat.jar
@@ -480,6 +479,7 @@ CLASSPATH(plugins/CorrectBleach_.jar)=jars/ij.jar
 jars/VIB-lib.jar <- src-plugins/VIB-lib/pom.xml
 jars/pal-optimization.jar <- src-plugins/pal-optimization/pom.xml
 jars/Jama.jar <- src-plugins/Jama/pom.xml
+jars/javac.jar <- src-plugins/javac/pom.xml
 
 # pre-Java5 generics ;-)
 
