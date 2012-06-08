@@ -33,6 +33,7 @@
 		<module>BeanShell_Interpreter</module>
 		<module>fiji-lib</module>
 		<module>3D_Viewer</module>
+		<module>bUnwarpJ_</module>
 	</modules>
 
 	<properties>

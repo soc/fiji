@@ -425,7 +425,6 @@ CLASSPATH(plugins/Interactive_3D_Surface_Plot.jar)=jars/ij.jar
 CLASSPATH(jars/ij.jar)=jars/javac.jar
 CLASSPATH(plugins/Analyze_Reader_Writer.jar)=jars/ij.jar
 CLASSPATH(plugins/Calculator_Plus.jar)=jars/ij.jar
-CLASSPATH(plugins/bUnwarpJ_.jar)=jars/ij.jar
 CLASSPATH(plugins/QuickPALM_.jar)=jars/ij.jar
 CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.jar
 CLASSPATH(plugins/FlowJ_.jar)=jars/ij.jar
@@ -480,6 +479,7 @@ plugins/JRuby_Interpreter.jar <- src-plugins/JRuby_Interpreter/pom.xml
 plugins/BeanShell_Interpreter.jar <- src-plugins/BeanShell_Interpreter/pom.xml
 jars/fiji-lib.jar <- src-plugins/fiji-lib/pom.xml
 plugins/3D_Viewer.jar <- src-plugins/3D_Viewer/pom.xml
+plugins/bUnwarpJ_.jar <- src-plugins/bUnwarpJ_/pom.xml
 
 # pre-Java5 generics ;-)
 
