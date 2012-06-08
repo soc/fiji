@@ -366,7 +366,6 @@ CLASSPATH(plugins/StackReg_.jar)=jars/ij.jar
 CLASSPATH(plugins/PointPicker_.jar)=jars/ij.jar
 CLASSPATH(plugins/Linear_Kuwahara.jar)=jars/ij.jar
 CLASSPATH(plugins/Thread_Killer.jar)=jars/ij.jar
-CLASSPATH(plugins/MosaicJ_.jar)=jars/ij.jar
 CLASSPATH(plugins/SheppLogan_.jar)=jars/ij.jar
 CLASSPATH(jars/wavelets.jar)=jars/ij.jar
 CLASSPATH(jars/imageware.jar)=jars/ij.jar
@@ -473,6 +472,7 @@ plugins/CPU_Meter.jar <- src-plugins/CPU_Meter/pom.xml
 plugins/Graph_Cut.jar <- src-plugins/Graph_Cut/pom.xml
 plugins/TopoJ_.jar <- src-plugins/TopoJ_/pom.xml
 plugins/Differentials_.jar <- src-plugins/Differentials_/pom.xml
+plugins/MosaicJ_.jar <- src-plugins/MosaicJ_/pom.xml
 
 # pre-Java5 generics ;-)
 

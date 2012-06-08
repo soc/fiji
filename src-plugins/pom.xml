@@ -103,6 +103,7 @@
 		<module>Graph_Cut</module>
 		<module>TopoJ_</module>
 		<module>Differentials_</module>
+		<module>MosaicJ_</module>
 	</modules>
 
 	<properties>
