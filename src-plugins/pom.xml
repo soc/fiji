@@ -64,6 +64,7 @@
 		<module>TurboReg_</module>
 		<module>Feature_Detection</module>
 		<module>Bug_Submitter</module>
+		<module>ToAST_</module>
 	</modules>
 
 	<properties>
