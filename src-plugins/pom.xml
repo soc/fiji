@@ -87,6 +87,7 @@
 		<module>Manual_Tracking</module>
 		<module>Calculator_Plus</module>
 		<module>3D_Objects_Counter</module>
+		<module>Anisotropic_Diffusion_2D</module>
 	</modules>
 
 	<properties>
