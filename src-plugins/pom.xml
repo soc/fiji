@@ -117,6 +117,7 @@
 		<module>Samples_</module>
 		<module>mij</module>
 		<module>wavelets</module>
+		<module>imageware</module>
 	</modules>
 
 	<properties>
