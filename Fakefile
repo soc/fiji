@@ -389,7 +389,6 @@ CLASSPATH(jars/ij.jar)=jars/javac.jar
 CLASSPATH(plugins/Calculator_Plus.jar)=jars/ij.jar
 CLASSPATH(plugins/QuickPALM_.jar)=jars/ij.jar
 CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.jar
-CLASSPATH(plugins/FlowJ_.jar)=jars/ij.jar
 CLASSPATH(plugins/3D_Objects_Counter.jar)=jars/ij.jar
 CLASSPATH(plugins/Snakuscule_.jar)=jars/ij.jar
 CLASSPATH(plugins/UnwarpJ_.jar)=jars/ij.jar
@@ -478,6 +477,7 @@ plugins/Refresh_Javas.jar <- src-plugins/Refresh_Javas/pom.xml
 plugins/Auto_Threshold.jar <- src-plugins/Auto_Threshold/pom.xml
 plugins/Arrow_.jar <- src-plugins/Arrow_/pom.xml
 plugins/Stack_Manipulation.jar <- src-plugins/Stack_Manipulation/pom.xml
+plugins/FlowJ_.jar <- src-plugins/FlowJ_/pom.xml
 
 # pre-Java5 generics ;-)
 
