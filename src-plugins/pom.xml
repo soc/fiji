@@ -47,6 +47,7 @@
 		<module>registration_3d</module>
 		<module>IO_</module>
 		<module>CLI_</module>
+		<module>Javascript_</module>
 	</modules>
 
 	<properties>
