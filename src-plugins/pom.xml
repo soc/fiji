@@ -42,6 +42,7 @@
 		<module>Fiji_Plugins</module>
 		<module>level_sets</module>
 		<module>blockmatching_</module>
+		<module>register_virtual_stack_slices</module>
 	</modules>
 
 	<properties>
