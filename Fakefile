@@ -358,7 +358,6 @@ CLASSPATH(jars/ij.jar)=jars/javac.jar
 CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.jar
 LIBS(plugins/JNI_Example.jar)=-lm
 CLASSPATH(plugins/JNI_Example.jar)=jars/ij.jar:jars/fiji-lib.jar
-CLASSPATH(plugins/Kuwahara_Filter.jar)=jars/ij.jar
 CLASSPATH(plugins/Action_Bar.jar)=jars/ij.jar
 CLASSPATH(plugins/Multi_Kymograph.jar)=jars/ij.jar
 CLASSPATH(plugins/Reconstruct_Reader.jar)=jars/ij.jar:plugins/TrakEM2_.jar
@@ -474,6 +473,7 @@ plugins/Extended_Depth_Field.jar <- src-plugins/Extended_Depth_Field/pom.xml
 plugins/panorama_.jar <- src-plugins/panorama_/pom.xml
 jars/weave_jy2java.jar <- src-plugins/weave_jy2java/pom.xml
 plugins/3D_Blob_Segmentation.jar <- src-plugins/3D_Blob_Segmentation/pom.xml
+plugins/Kuwahara_Filter.jar <- src-plugins/Kuwahara_Filter/pom.xml
 
 # pre-Java5 generics ;-)
 

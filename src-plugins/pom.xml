@@ -122,6 +122,7 @@
 		<module>panorama_</module>
 		<module>weave_jy2java</module>
 		<module>3D_Blob_Segmentation</module>
+		<module>Kuwahara_Filter</module>
 	</modules>
 
 	<properties>
