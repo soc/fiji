@@ -115,6 +115,7 @@
 		<module>Linear_Kuwahara</module>
 		<module>Thread_Killer</module>
 		<module>Samples_</module>
+		<module>mij</module>
 	</modules>
 
 	<properties>
