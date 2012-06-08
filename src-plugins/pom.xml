@@ -44,6 +44,7 @@
 		<module>blockmatching_</module>
 		<module>register_virtual_stack_slices</module>
 		<module>Siox_Segmentation</module>
+		<module>registration_3d</module>
 	</modules>
 
 	<properties>
