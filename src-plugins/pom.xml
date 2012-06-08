@@ -50,6 +50,7 @@
 		<module>Javascript_</module>
 		<module>LSM_Reader</module>
 		<module>LSM_Toolbox</module>
+		<module>SplineDeformationGenerator_</module>
 	</modules>
 
 	<properties>
