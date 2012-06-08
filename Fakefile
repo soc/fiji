@@ -345,7 +345,6 @@ src-plugins/Script_Editor/var.png[bin/copy-file.bsh $PRE $TARGET] <- images/var.
 src-plugins/Script_Editor/function.png[bin/copy-file.bsh $PRE $TARGET] <- images/function.png
 
 CLASSPATH(jars/zs.jar)=jars/Jama.jar
-CLASSPATH(plugins/Image_Expression_Parser.jar)=jars/ij.jar:jars/jep.jar:jars/imglib.jar:jars/junit.jar:jars/imglib-algorithms.jar:jars/imglib-ij.jar
 
 CLASSPATH(plugins/Algorithm_Launcher.jar)=jars/ij.jar:jars/imglib.jar:jars/imglib-ij.jar
 plugins/Algorithm_Launcher.jar <- \
@@ -476,6 +475,7 @@ plugins/IsoData_Classifier.jar <- src-plugins/IsoData_Classifier/pom.xml
 plugins/RATS_.jar <- src-plugins/RATS_/pom.xml
 plugins/Directionality_.jar <- src-plugins/Directionality_/pom.xml
 jars/jep.jar <- src-plugins/jep/pom.xml
+plugins/Image_Expression_Parser.jar <- src-plugins/Image_Expression_Parser/pom.xml
 
 # pre-Java5 generics ;-)
 

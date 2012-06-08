@@ -94,6 +94,7 @@
 		<module>RATS_</module>
 		<module>Directionality_</module>
 		<module>jep</module>
+		<module>Image_Expression_Parser</module>
 	</modules>
 
 	<properties>
