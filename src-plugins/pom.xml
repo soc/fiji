@@ -130,6 +130,7 @@
 		<module>Dichromacy_</module>
 		<module>Threshold_Colour</module>
 		<module>Helmholtz_Analysis</module>
+		<module>Descriptor_based_registration</module>
 	</modules>
 
 	<properties>

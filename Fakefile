@@ -348,7 +348,6 @@ CLASSPATH(jars/zs.jar)=jars/Jama.jar
 
 
 CLASSPATH(jars/VIB-lib.jar)=jars/ij.jar:jars/Jama.jar:jars/junit.jar:jars/pal-optimization.jar:jars/jzlib.jar:jars/fiji-lib.jar
-CLASSPATH(plugins/Descriptor_based_registration.jar)=jars/ij.jar:jars/imglib.jar:jars/mpicbg.jar:jars/fiji-lib.jar:plugins/Fiji_Plugins.jar:jars/VIB-lib.jar:jars/Jama.jar:jars/imglib-algorithms.jar:jars/imglib-ij.jar:jars/imglib-io.jar:plugins/SPIM_Registration.jar:plugins/Stitching_.jar:$JAVA3D_JARS
 CLASSPATH(jars/autocomplete.jar)=jars/rsyntaxtextarea.jar
 CLASSPATH(jars/jython.jar)=jars/junit.jar:jars/jna.jar
 CLASSPATH(plugins/loci_tools.jar)=jars/ij.jar
@@ -474,6 +473,7 @@ plugins/Colour_Deconvolution.jar <- src-plugins/Colour_Deconvolution/pom.xml
 plugins/Dichromacy_.jar <- src-plugins/Dichromacy_/pom.xml
 plugins/Threshold_Colour.jar <- src-plugins/Threshold_Colour/pom.xml
 plugins/Helmholtz_Analysis.jar <- src-plugins/Helmholtz_Analysis/pom.xml
+plugins/Descriptor_based_registration.jar <- src-plugins/Descriptor_based_registration/pom.xml
 
 # pre-Java5 generics ;-)
 
