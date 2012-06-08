@@ -477,6 +477,7 @@ plugins/MTrack2_.jar <- src-plugins/MTrack2_/pom.xml
 plugins/Time_Stamper.jar <- src-plugins/Time_Stamper/pom.xml
 plugins/Series_Labeler.jar <- src-plugins/Series_Labeler/pom.xml
 plugins/Statistical_Region_Merging.jar <- src-plugins/Statistical_Region_Merging/pom.xml
+jars/fake.jar <- src-plugins/fake/pom.xml
 
 # pre-Java5 generics ;-)
 
@@ -640,5 +641,3 @@ check-*[bin/up-to-date-check.py * precompiled/*_.jar] <-
 
 # Fake itself
 
-MAINCLASS(jars/fake.jar)=fiji.build.Fake
-jars/fake.jar <- src-plugins/fake/**/*.java
