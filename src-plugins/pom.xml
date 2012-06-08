@@ -78,6 +78,7 @@
 		<module>PIV_analyser</module>
 		<module>Record_Screen</module>
 		<module>Video_Editing</module>
+		<module>Sync_Win</module>
 	</modules>
 
 	<properties>
