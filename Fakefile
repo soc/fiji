@@ -346,10 +346,6 @@ src-plugins/Script_Editor/function.png[bin/copy-file.bsh $PRE $TARGET] <- images
 
 CLASSPATH(jars/zs.jar)=jars/Jama.jar
 
-CLASSPATH(plugins/Algorithm_Launcher.jar)=jars/ij.jar:jars/imglib.jar:jars/imglib-ij.jar
-plugins/Algorithm_Launcher.jar <- \
-	src-plugins/Algorithm_Launcher/**/*.java \
-	src-plugins/Algorithm_Launcher/**/*.config
 
 CLASSPATH(plugins/TrackMate_.jar)=jars/itextpdf.jar:jars/batik.jar:jars/ij.jar:plugins/3D_Viewer.jar:plugins/loci_tools.jar:jars/fiji-lib.jar:jars/imglib.jar:jars/imglib-ij.jar:jars/imglib-io.jar:jars/imglib-algorithms.jar:jars/jdom.jar:jars/jdom-contrib.jar:jars/jgraphx.jar:jars/jgrapht-jdk1.6.jar:jars/jfreechart.jar:jars/jcommon.jar:jars/Jama.jar:$JAVA3D_JARS
 CLASSPATH(jars/VIB-lib.jar)=jars/ij.jar:jars/Jama.jar:jars/junit.jar:jars/pal-optimization.jar:jars/jzlib.jar:jars/fiji-lib.jar
@@ -476,6 +472,7 @@ plugins/RATS_.jar <- src-plugins/RATS_/pom.xml
 plugins/Directionality_.jar <- src-plugins/Directionality_/pom.xml
 jars/jep.jar <- src-plugins/jep/pom.xml
 plugins/Image_Expression_Parser.jar <- src-plugins/Image_Expression_Parser/pom.xml
+plugins/Algorithm_Launcher.jar <- src-plugins/Algorithm_Launcher/pom.xml
 
 # pre-Java5 generics ;-)
 

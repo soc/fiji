@@ -95,6 +95,7 @@
 		<module>Directionality_</module>
 		<module>jep</module>
 		<module>Image_Expression_Parser</module>
+		<module>Algorithm_Launcher</module>
 	</modules>
 
 	<properties>
