@@ -77,6 +77,7 @@
 		<module>FlowJ_</module>
 		<module>PIV_analyser</module>
 		<module>Record_Screen</module>
+		<module>Video_Editing</module>
 	</modules>
 
 	<properties>

@@ -378,7 +378,6 @@ CLASSPATH(plugins/Anisotropic_Diffusion_2D.jar)=jars/ij.jar
 CLASSPATH(plugins/Manual_Tracking.jar)=jars/ij.jar:plugins/Image_5D.jar
 CLASSPATH(jars/autocomplete.jar)=jars/rsyntaxtextarea.jar
 CLASSPATH(jars/jython.jar)=jars/junit.jar:jars/jna.jar
-CLASSPATH(plugins/Video_Editing.jar)=jars/ij.jar
 CLASSPATH(plugins/loci_tools.jar)=jars/ij.jar
 CLASSPATH(plugins/LocalThickness_.jar)=jars/ij.jar
 CLASSPATH(jars/batik.jar)=jars/jacl.jar:plugins/loci_tools.jar:jars/jython.jar
@@ -478,6 +477,7 @@ plugins/Stack_Manipulation.jar <- src-plugins/Stack_Manipulation/pom.xml
 plugins/FlowJ_.jar <- src-plugins/FlowJ_/pom.xml
 plugins/PIV_analyser.jar <- src-plugins/PIV_analyser/pom.xml
 plugins/Record_Screen.jar <- src-plugins/Record_Screen/pom.xml
+plugins/Video_Editing.jar <- src-plugins/Video_Editing/pom.xml
 
 # pre-Java5 generics ;-)
 
