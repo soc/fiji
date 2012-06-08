@@ -43,6 +43,7 @@
 		<module>level_sets</module>
 		<module>blockmatching_</module>
 		<module>register_virtual_stack_slices</module>
+		<module>Siox_Segmentation</module>
 	</modules>
 
 	<properties>
