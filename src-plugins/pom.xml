@@ -120,6 +120,7 @@
 		<module>imageware</module>
 		<module>Extended_Depth_Field</module>
 		<module>panorama_</module>
+		<module>weave_jy2java</module>
 	</modules>
 
 	<properties>

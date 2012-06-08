@@ -356,7 +356,6 @@ CLASSPATH(plugins/loci_tools.jar)=jars/ij.jar
 CLASSPATH(jars/batik.jar)=jars/jacl.jar:plugins/loci_tools.jar:jars/jython.jar
 CLASSPATH(jars/ij.jar)=jars/javac.jar
 CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.jar
-CLASSPATH(jars/weave_jy2java.jar)=plugins/Refresh_Javas.jar:jars/fiji-scripting.jar:jars/fiji-compat.jar:jars/ij.jar:plugins/Script_Editor.jar
 CLASSPATH(plugins/3D_Blob_Segmentation.jar)=jars/ij.jar:plugins/level_sets.jar:plugins/3D_Viewer.jar:jars/VIB-lib.jar:jars/imglib.jar:$JAVA3D_JARS
 LIBS(plugins/JNI_Example.jar)=-lm
 CLASSPATH(plugins/JNI_Example.jar)=jars/ij.jar:jars/fiji-lib.jar
@@ -474,6 +473,7 @@ jars/wavelets.jar <- src-plugins/wavelets/pom.xml
 jars/imageware.jar <- src-plugins/imageware/pom.xml
 plugins/Extended_Depth_Field.jar <- src-plugins/Extended_Depth_Field/pom.xml
 plugins/panorama_.jar <- src-plugins/panorama_/pom.xml
+jars/weave_jy2java.jar <- src-plugins/weave_jy2java/pom.xml
 
 # pre-Java5 generics ;-)
 
