@@ -341,8 +341,6 @@ plugins/Trainable_Segmentation.jar <- src-plugins/Trainable_Segmentation/**/*jav
 mainClass(jars/fiji-compat.jar)=fiji.Main
 
 
-MAINCLASS(plugins/Script_Editor.jar)=fiji.scripting.Script_Editor
-CLASSPATH(plugins/Script_Editor.jar)=jars/ij.jar:jars/rsyntaxtextarea.jar:jars/autocomplete.jar:plugins/Clojure_Interpreter.jar:plugins/JRuby_Interpreter.jar:plugins/Javascript_.jar:plugins/Jython_Interpreter.jar:plugins/Refresh_Javas.jar:plugins/BeanShell_Interpreter.jar:plugins/CLI_.jar:jars/fiji-scripting.jar:jars/fiji-compat.jar:jars/imglib2.jar:jars/fiji-lib.jar:jars/fake.jar:$TOOLS_JAR:jars/jfreechart.jar:jars/imglib2-ij.jar:jars/commons-math.jar
 src-plugins/Script_Editor/icon.png[bin/copy-file.bsh $PRE $TARGET] <- images/icon.png
 src-plugins/Script_Editor/var.png[bin/copy-file.bsh $PRE $TARGET] <- images/var.png
 src-plugins/Script_Editor/function.png[bin/copy-file.bsh $PRE $TARGET] <- images/function.png
@@ -478,6 +476,7 @@ plugins/Sync_Win.jar <- src-plugins/Sync_Win/pom.xml
 plugins/Gray_Morphology.jar <- src-plugins/Gray_Morphology/pom.xml
 plugins/Colocalisation_Analysis.jar <- src-plugins/Colocalisation_Analysis/pom.xml
 plugins/LocalThickness_.jar <- src-plugins/LocalThickness_/pom.xml
+plugins/Script_Editor.jar <- src-plugins/Script_Editor/pom.xml
 
 # pre-Java5 generics ;-)
 

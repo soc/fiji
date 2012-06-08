@@ -82,6 +82,7 @@
 		<module>Gray_Morphology</module>
 		<module>Colocalisation_Analysis</module>
 		<module>LocalThickness_</module>
+		<module>Script_Editor</module>
 	</modules>
 
 	<properties>
