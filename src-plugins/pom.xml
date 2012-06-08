@@ -133,6 +133,7 @@
 		<module>Descriptor_based_registration</module>
 		<module>Reconstruct_Reader</module>
 		<module>FS_Align_TrakEM2</module>
+		<module>Fiji_Package_Maker</module>
 	</modules>
 
 	<properties>
