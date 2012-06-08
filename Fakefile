@@ -425,7 +425,6 @@ CLASSPATH(plugins/LocalThickness_.jar)=jars/ij.jar
 CLASSPATH(plugins/Volume_Viewer.jar)=jars/ij.jar
 CLASSPATH(jars/batik.jar)=jars/jacl.jar:plugins/loci_tools.jar:jars/jython.jar
 CLASSPATH(plugins/Stack_Manipulation.jar)=jars/ij.jar
-CLASSPATH(jars/fiji-compat.jar)=jars/ij.jar:jars/javassist.jar
 CLASSPATH(plugins/TurboReg_.jar)=jars/ij.jar
 CLASSPATH(plugins/RATS_.jar)=jars/ij.jar
 CLASSPATH(plugins/Interactive_3D_Surface_Plot.jar)=jars/ij.jar
@@ -480,6 +479,7 @@ jars/VIB-lib.jar <- src-plugins/VIB-lib/pom.xml
 jars/pal-optimization.jar <- src-plugins/pal-optimization/pom.xml
 jars/Jama.jar <- src-plugins/Jama/pom.xml
 jars/javac.jar <- src-plugins/javac/pom.xml
+jars/fiji-compat.jar <- src-plugins/fiji-compat/pom.xml
 
 # pre-Java5 generics ;-)
 

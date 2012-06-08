@@ -25,6 +25,7 @@
 		<module>pal-optimization</module>
 		<module>Jama</module>
 		<module>javac</module>
+		<module>fiji-compat</module>
 	</modules>
 
 	<properties>
