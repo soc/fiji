@@ -61,6 +61,7 @@
 		<module>IJ_Robot</module>
 		<module>Fiji_Updater</module>
 		<module>Stitching_</module>
+		<module>TurboReg_</module>
 	</modules>
 
 	<properties>

@@ -393,7 +393,6 @@ CLASSPATH(plugins/loci_tools.jar)=jars/ij.jar
 CLASSPATH(plugins/LocalThickness_.jar)=jars/ij.jar
 CLASSPATH(jars/batik.jar)=jars/jacl.jar:plugins/loci_tools.jar:jars/jython.jar
 CLASSPATH(plugins/Stack_Manipulation.jar)=jars/ij.jar
-CLASSPATH(plugins/TurboReg_.jar)=jars/ij.jar
 CLASSPATH(plugins/RATS_.jar)=jars/ij.jar
 CLASSPATH(jars/ij.jar)=jars/javac.jar
 CLASSPATH(plugins/Calculator_Plus.jar)=jars/ij.jar
@@ -477,6 +476,7 @@ plugins/Volume_Viewer.jar <- src-plugins/Volume_Viewer/pom.xml
 plugins/IJ_Robot.jar <- src-plugins/IJ_Robot/pom.xml
 plugins/Fiji_Updater.jar <- src-plugins/Fiji_Updater/pom.xml
 plugins/Stitching_.jar <- src-plugins/Stitching_/pom.xml
+plugins/TurboReg_.jar <- src-plugins/TurboReg_/pom.xml
 
 # pre-Java5 generics ;-)
 
