@@ -134,6 +134,7 @@
 		<module>Reconstruct_Reader</module>
 		<module>FS_Align_TrakEM2</module>
 		<module>Fiji_Package_Maker</module>
+		<module>BalloonSegmentation_</module>
 	</modules>
 
 	<properties>

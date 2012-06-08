@@ -356,7 +356,6 @@ CLASSPATH(jars/ij.jar)=jars/javac.jar
 CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.jar
 LIBS(plugins/JNI_Example.jar)=-lm
 CLASSPATH(plugins/JNI_Example.jar)=jars/ij.jar:jars/fiji-lib.jar
-CLASSPATH(plugins/BalloonSegmentation_.jar)=jars/ij.jar:jars/Jama.jar
 CLASSPATH(plugins/CorrectBleach_.jar)=jars/ij.jar
 
 # pom.xml sub-projects
@@ -474,6 +473,7 @@ plugins/Descriptor_based_registration.jar <- src-plugins/Descriptor_based_regist
 plugins/Reconstruct_Reader.jar <- src-plugins/Reconstruct_Reader/pom.xml
 plugins/FS_Align_TrakEM2.jar <- src-plugins/FS_Align_TrakEM2/pom.xml
 plugins/Fiji_Package_Maker.jar <- src-plugins/Fiji_Package_Maker/pom.xml
+plugins/BalloonSegmentation_.jar <- src-plugins/BalloonSegmentation_/pom.xml
 
 # pre-Java5 generics ;-)
 
