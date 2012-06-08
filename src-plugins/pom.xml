@@ -105,6 +105,7 @@
 		<module>Differentials_</module>
 		<module>MosaicJ_</module>
 		<module>PointPicker_</module>
+		<module>SheppLogan_</module>
 	</modules>
 
 	<properties>
