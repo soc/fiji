@@ -110,6 +110,7 @@
 		<module>UnwarpJ_</module>
 		<module>Snakuscule_</module>
 		<module>TransformJ_</module>
+		<module>FeatureJ_</module>
 	</modules>
 
 	<properties>
