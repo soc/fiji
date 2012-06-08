@@ -406,7 +406,6 @@ CLASSPATH(plugins/TurboReg_.jar)=jars/ij.jar
 CLASSPATH(plugins/RATS_.jar)=jars/ij.jar
 CLASSPATH(plugins/Interactive_3D_Surface_Plot.jar)=jars/ij.jar
 CLASSPATH(jars/ij.jar)=jars/javac.jar
-CLASSPATH(plugins/Analyze_Reader_Writer.jar)=jars/ij.jar
 CLASSPATH(plugins/Calculator_Plus.jar)=jars/ij.jar
 CLASSPATH(plugins/QuickPALM_.jar)=jars/ij.jar
 CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.jar
@@ -479,6 +478,7 @@ plugins/Javascript_.jar <- src-plugins/Javascript_/pom.xml
 plugins/LSM_Reader.jar <- src-plugins/LSM_Reader/pom.xml
 plugins/LSM_Toolbox.jar <- src-plugins/LSM_Toolbox/pom.xml
 plugins/SplineDeformationGenerator_.jar <- src-plugins/SplineDeformationGenerator_/pom.xml
+plugins/Analyze_Reader_Writer.jar <- src-plugins/Analyze_Reader_Writer/pom.xml
 
 # pre-Java5 generics ;-)
 
