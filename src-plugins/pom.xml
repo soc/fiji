@@ -81,6 +81,7 @@
 		<module>Sync_Win</module>
 		<module>Gray_Morphology</module>
 		<module>Colocalisation_Analysis</module>
+		<module>LocalThickness_</module>
 	</modules>
 
 	<properties>
