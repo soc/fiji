@@ -101,6 +101,7 @@
 		<module>QuickPALM_</module>
 		<module>CPU_Meter</module>
 		<module>Graph_Cut</module>
+		<module>TopoJ_</module>
 	</modules>
 
 	<properties>
