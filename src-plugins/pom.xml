@@ -46,6 +46,7 @@
 		<module>Siox_Segmentation</module>
 		<module>registration_3d</module>
 		<module>IO_</module>
+		<module>CLI_</module>
 	</modules>
 
 	<properties>
