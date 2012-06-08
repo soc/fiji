@@ -53,6 +53,7 @@
 		<module>SplineDeformationGenerator_</module>
 		<module>Analyze_Reader_Writer</module>
 		<module>Color_Histogram</module>
+		<module>Color_Inspector_3D</module>
 	</modules>
 
 	<properties>
