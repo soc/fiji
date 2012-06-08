@@ -343,7 +343,6 @@ mainClass(jars/fiji-compat.jar)=fiji.Main
 
 
 CLASSPATH(plugins/Refresh_Javas.jar)=jars/ij.jar:jars/fiji-scripting.jar:jars/fake.jar:jars/fiji-compat.jar
-CLASSPATH(plugins/JRuby_Interpreter.jar)=jars/ij.jar:jars/fiji-scripting.jar:jars/jruby.jar
 CLASSPATH(plugins/BeanShell_Interpreter.jar)=jars/ij.jar:jars/fiji-scripting.jar:jars/bsh.jar
 CLASSPATH(plugins/Javascript_.jar)=jars/ij.jar:jars/fiji-scripting.jar:jars/js.jar
 CLASSPATH(plugins/CLI_.jar)=jars/ij.jar:jars/fiji-scripting.jar
@@ -480,6 +479,7 @@ jars/fiji-compat.jar <- src-plugins/fiji-compat/pom.xml
 jars/fiji-scripting.jar <- src-plugins/fiji-scripting/pom.xml
 plugins/Jython_Interpreter.jar <- src-plugins/Jython_Interpreter/pom.xml
 plugins/Clojure_Interpreter.jar <- src-plugins/Clojure_Interpreter/pom.xml
+plugins/JRuby_Interpreter.jar <- src-plugins/JRuby_Interpreter/pom.xml
 
 # pre-Java5 generics ;-)
 
