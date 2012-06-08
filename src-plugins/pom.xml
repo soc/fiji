@@ -31,6 +31,7 @@
 		<module>Clojure_Interpreter</module>
 		<module>JRuby_Interpreter</module>
 		<module>BeanShell_Interpreter</module>
+		<module>fiji-lib</module>
 	</modules>
 
 	<properties>

@@ -423,7 +423,6 @@ CLASSPATH(plugins/Stack_Manipulation.jar)=jars/ij.jar
 CLASSPATH(plugins/TurboReg_.jar)=jars/ij.jar
 CLASSPATH(plugins/RATS_.jar)=jars/ij.jar
 CLASSPATH(plugins/Interactive_3D_Surface_Plot.jar)=jars/ij.jar
-CLASSPATH(jars/fiji-lib.jar)=jars/ij.jar
 CLASSPATH(jars/ij.jar)=jars/javac.jar
 CLASSPATH(plugins/Analyze_Reader_Writer.jar)=jars/ij.jar
 CLASSPATH(plugins/Calculator_Plus.jar)=jars/ij.jar
@@ -480,6 +479,7 @@ plugins/Jython_Interpreter.jar <- src-plugins/Jython_Interpreter/pom.xml
 plugins/Clojure_Interpreter.jar <- src-plugins/Clojure_Interpreter/pom.xml
 plugins/JRuby_Interpreter.jar <- src-plugins/JRuby_Interpreter/pom.xml
 plugins/BeanShell_Interpreter.jar <- src-plugins/BeanShell_Interpreter/pom.xml
+jars/fiji-lib.jar <- src-plugins/fiji-lib/pom.xml
 
 # pre-Java5 generics ;-)
 
