@@ -97,6 +97,7 @@
 		<module>Image_Expression_Parser</module>
 		<module>Algorithm_Launcher</module>
 		<module>SPIM_Opener</module>
+		<module>SPIM_Registration</module>
 	</modules>
 
 	<properties>
