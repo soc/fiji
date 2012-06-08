@@ -48,6 +48,7 @@
 		<module>IO_</module>
 		<module>CLI_</module>
 		<module>Javascript_</module>
+		<module>LSM_Reader</module>
 	</modules>
 
 	<properties>

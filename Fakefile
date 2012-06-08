@@ -400,7 +400,6 @@ CLASSPATH(plugins/PIV_analyser.jar)=jars/ij.jar
 CLASSPATH(plugins/Color_Inspector_3D.jar)=jars/ij.jar
 CLASSPATH(plugins/MTrack2_.jar)=jars/ij.jar
 CLASSPATH(plugins/Color_Histogram.jar)=jars/ij.jar
-CLASSPATH(plugins/LSM_Reader.jar)=jars/ij.jar
 CLASSPATH(plugins/loci_tools.jar)=jars/ij.jar
 CLASSPATH(plugins/LocalThickness_.jar)=jars/ij.jar
 CLASSPATH(plugins/Volume_Viewer.jar)=jars/ij.jar
@@ -480,6 +479,7 @@ plugins/registration_3d.jar <- src-plugins/registration_3d/pom.xml
 plugins/IO_.jar <- src-plugins/IO_/pom.xml
 plugins/CLI_.jar <- src-plugins/CLI_/pom.xml
 plugins/Javascript_.jar <- src-plugins/Javascript_/pom.xml
+plugins/LSM_Reader.jar <- src-plugins/LSM_Reader/pom.xml
 
 # pre-Java5 generics ;-)
 
