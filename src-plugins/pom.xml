@@ -92,6 +92,7 @@
 		<module>Trainable_Segmentation</module>
 		<module>IsoData_Classifier</module>
 		<module>RATS_</module>
+		<module>Directionality_</module>
 	</modules>
 
 	<properties>

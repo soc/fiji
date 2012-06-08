@@ -352,7 +352,6 @@ plugins/Algorithm_Launcher.jar <- \
 	src-plugins/Algorithm_Launcher/**/*.java \
 	src-plugins/Algorithm_Launcher/**/*.config
 
-CLASSPATH(plugins/Directionality_.jar)=jars/ij.jar:jars/jfreechart.jar:jars/jcommon.jar
 CLASSPATH(plugins/TrackMate_.jar)=jars/itextpdf.jar:jars/batik.jar:jars/ij.jar:plugins/3D_Viewer.jar:plugins/loci_tools.jar:jars/fiji-lib.jar:jars/imglib.jar:jars/imglib-ij.jar:jars/imglib-io.jar:jars/imglib-algorithms.jar:jars/jdom.jar:jars/jdom-contrib.jar:jars/jgraphx.jar:jars/jgrapht-jdk1.6.jar:jars/jfreechart.jar:jars/jcommon.jar:jars/Jama.jar:$JAVA3D_JARS
 CLASSPATH(jars/VIB-lib.jar)=jars/ij.jar:jars/Jama.jar:jars/junit.jar:jars/pal-optimization.jar:jars/jzlib.jar:jars/fiji-lib.jar
 CLASSPATH(plugins/SPIM_Opener.jar)=jars/ij.jar:jars/fiji-lib.jar
@@ -476,6 +475,7 @@ jars/imagescience.jar <- src-plugins/imagescience/pom.xml
 plugins/Trainable_Segmentation.jar <- src-plugins/Trainable_Segmentation/pom.xml
 plugins/IsoData_Classifier.jar <- src-plugins/IsoData_Classifier/pom.xml
 plugins/RATS_.jar <- src-plugins/RATS_/pom.xml
+plugins/Directionality_.jar <- src-plugins/Directionality_/pom.xml
 
 # pre-Java5 generics ;-)
 
