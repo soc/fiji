@@ -123,6 +123,7 @@
 		<module>weave_jy2java</module>
 		<module>3D_Blob_Segmentation</module>
 		<module>Kuwahara_Filter</module>
+		<module>Action_Bar</module>
 	</modules>
 
 	<properties>
