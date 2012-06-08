@@ -93,6 +93,7 @@
 		<module>IsoData_Classifier</module>
 		<module>RATS_</module>
 		<module>Directionality_</module>
+		<module>jep</module>
 	</modules>
 
 	<properties>
