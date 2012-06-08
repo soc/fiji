@@ -369,7 +369,6 @@ CLASSPATH(jars/imagescience.jar)=jars/ij.jar:plugins/Image_5D.jar
 CLASSPATH(plugins/TransformJ_.jar)=jars/ij.jar:jars/imagescience.jar
 CLASSPATH(plugins/FeatureJ_.jar)=jars/ij.jar:jars/imagescience.jar
 CLASSPATH(plugins/RandomJ_.jar)=jars/ij.jar:jars/imagescience.jar
-CLASSPATH(plugins/Colocalisation_Analysis.jar)=jars/ij.jar:jars/imglib.jar:jars/imglib-ij.jar:jars/imglib-algorithms.jar:jars/junit.jar:jars/itextpdf.jar:jars/fiji-lib.jar
 CLASSPATH(plugins/IsoData_Classifier.jar)=jars/ij.jar
 CLASSPATH(plugins/CPU_Meter.jar)=jars/jna.jar:jars/ij.jar
 CLASSPATH(plugins/Anisotropic_Diffusion_2D.jar)=jars/ij.jar
@@ -478,6 +477,7 @@ plugins/Record_Screen.jar <- src-plugins/Record_Screen/pom.xml
 plugins/Video_Editing.jar <- src-plugins/Video_Editing/pom.xml
 plugins/Sync_Win.jar <- src-plugins/Sync_Win/pom.xml
 plugins/Gray_Morphology.jar <- src-plugins/Gray_Morphology/pom.xml
+plugins/Colocalisation_Analysis.jar <- src-plugins/Colocalisation_Analysis/pom.xml
 
 # pre-Java5 generics ;-)
 

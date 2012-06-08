@@ -80,6 +80,7 @@
 		<module>Video_Editing</module>
 		<module>Sync_Win</module>
 		<module>Gray_Morphology</module>
+		<module>Colocalisation_Analysis</module>
 	</modules>
 
 	<properties>
