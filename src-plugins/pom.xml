@@ -98,6 +98,7 @@
 		<module>Algorithm_Launcher</module>
 		<module>SPIM_Opener</module>
 		<module>SPIM_Registration</module>
+		<module>QuickPALM_</module>
 	</modules>
 
 	<properties>

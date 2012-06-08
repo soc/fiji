@@ -360,7 +360,6 @@ CLASSPATH(jars/jython.jar)=jars/junit.jar:jars/jna.jar
 CLASSPATH(plugins/loci_tools.jar)=jars/ij.jar
 CLASSPATH(jars/batik.jar)=jars/jacl.jar:plugins/loci_tools.jar:jars/jython.jar
 CLASSPATH(jars/ij.jar)=jars/javac.jar
-CLASSPATH(plugins/QuickPALM_.jar)=jars/ij.jar
 CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.jar
 CLASSPATH(plugins/Snakuscule_.jar)=jars/ij.jar
 CLASSPATH(plugins/UnwarpJ_.jar)=jars/ij.jar
@@ -473,6 +472,7 @@ plugins/Image_Expression_Parser.jar <- src-plugins/Image_Expression_Parser/pom.x
 plugins/Algorithm_Launcher.jar <- src-plugins/Algorithm_Launcher/pom.xml
 plugins/SPIM_Opener.jar <- src-plugins/SPIM_Opener/pom.xml
 plugins/SPIM_Registration.jar <- src-plugins/SPIM_Registration/pom.xml
+plugins/QuickPALM_.jar <- src-plugins/QuickPALM_/pom.xml
 
 # pre-Java5 generics ;-)
 
