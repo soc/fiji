@@ -362,7 +362,6 @@ CLASSPATH(jars/ij.jar)=jars/javac.jar
 CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.jar
 CLASSPATH(plugins/Snakuscule_.jar)=jars/ij.jar
 CLASSPATH(plugins/UnwarpJ_.jar)=jars/ij.jar
-CLASSPATH(plugins/Graph_Cut.jar)=jars/ij.jar:jars/imglib.jar:jars/imglib-ij.jar:jars/fiji-lib.jar
 CLASSPATH(jars/mij.jar)=jars/ij.jar
 CLASSPATH(plugins/Differentials_.jar)=jars/ij.jar
 CLASSPATH(plugins/StackReg_.jar)=jars/ij.jar
@@ -473,6 +472,7 @@ plugins/SPIM_Opener.jar <- src-plugins/SPIM_Opener/pom.xml
 plugins/SPIM_Registration.jar <- src-plugins/SPIM_Registration/pom.xml
 plugins/QuickPALM_.jar <- src-plugins/QuickPALM_/pom.xml
 plugins/CPU_Meter.jar <- src-plugins/CPU_Meter/pom.xml
+plugins/Graph_Cut.jar <- src-plugins/Graph_Cut/pom.xml
 
 # pre-Java5 generics ;-)
 
