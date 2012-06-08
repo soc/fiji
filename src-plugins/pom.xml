@@ -84,6 +84,7 @@
 		<module>LocalThickness_</module>
 		<module>Script_Editor</module>
 		<module>Fiji_Developer</module>
+		<module>Manual_Tracking</module>
 	</modules>
 
 	<properties>

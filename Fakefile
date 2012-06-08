@@ -369,7 +369,6 @@ CLASSPATH(plugins/RandomJ_.jar)=jars/ij.jar:jars/imagescience.jar
 CLASSPATH(plugins/IsoData_Classifier.jar)=jars/ij.jar
 CLASSPATH(plugins/CPU_Meter.jar)=jars/jna.jar:jars/ij.jar
 CLASSPATH(plugins/Anisotropic_Diffusion_2D.jar)=jars/ij.jar
-CLASSPATH(plugins/Manual_Tracking.jar)=jars/ij.jar:plugins/Image_5D.jar
 CLASSPATH(jars/autocomplete.jar)=jars/rsyntaxtextarea.jar
 CLASSPATH(jars/jython.jar)=jars/junit.jar:jars/jna.jar
 CLASSPATH(plugins/loci_tools.jar)=jars/ij.jar
@@ -477,6 +476,7 @@ plugins/Colocalisation_Analysis.jar <- src-plugins/Colocalisation_Analysis/pom.x
 plugins/LocalThickness_.jar <- src-plugins/LocalThickness_/pom.xml
 plugins/Script_Editor.jar <- src-plugins/Script_Editor/pom.xml
 plugins/Fiji_Developer.jar <- src-plugins/Fiji_Developer/pom.xml
+plugins/Manual_Tracking.jar <- src-plugins/Manual_Tracking/pom.xml
 
 # pre-Java5 generics ;-)
 
