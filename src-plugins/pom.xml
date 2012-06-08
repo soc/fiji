@@ -111,6 +111,7 @@
 		<module>Snakuscule_</module>
 		<module>TransformJ_</module>
 		<module>FeatureJ_</module>
+		<module>RandomJ_</module>
 	</modules>
 
 	<properties>
