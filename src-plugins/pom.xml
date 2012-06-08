@@ -26,6 +26,7 @@
 		<module>Jama</module>
 		<module>javac</module>
 		<module>fiji-compat</module>
+		<module>fiji-scripting</module>
 	</modules>
 
 	<properties>
