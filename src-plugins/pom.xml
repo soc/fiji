@@ -32,6 +32,7 @@
 		<module>JRuby_Interpreter</module>
 		<module>BeanShell_Interpreter</module>
 		<module>fiji-lib</module>
+		<module>3D_Viewer</module>
 	</modules>
 
 	<properties>
