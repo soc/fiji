@@ -126,6 +126,7 @@
 		<module>Action_Bar</module>
 		<module>Multi_Kymograph</module>
 		<module>TrackMate_</module>
+		<module>Colour_Deconvolution</module>
 	</modules>
 
 	<properties>
