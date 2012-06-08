@@ -409,7 +409,6 @@ CLASSPATH(jars/jython.jar)=jars/junit.jar:jars/jna.jar
 CLASSPATH(plugins/Video_Editing.jar)=jars/ij.jar
 CLASSPATH(plugins/Statistical_Region_Merging.jar)=jars/ij.jar
 CLASSPATH(plugins/PIV_analyser.jar)=jars/ij.jar
-CLASSPATH(plugins/Skeletonize3D_.jar)=jars/ij.jar
 CLASSPATH(plugins/Color_Inspector_3D.jar)=jars/ij.jar
 CLASSPATH(plugins/MTrack2_.jar)=jars/ij.jar
 CLASSPATH(plugins/Color_Histogram.jar)=jars/ij.jar
@@ -480,6 +479,7 @@ jars/fiji-lib.jar <- src-plugins/fiji-lib/pom.xml
 plugins/3D_Viewer.jar <- src-plugins/3D_Viewer/pom.xml
 plugins/bUnwarpJ_.jar <- src-plugins/bUnwarpJ_/pom.xml
 plugins/Lasso_and_Blow_Tool.jar <- src-plugins/Lasso_and_Blow_Tool/pom.xml
+plugins/Skeletonize3D_.jar <- src-plugins/Skeletonize3D_/pom.xml
 
 # pre-Java5 generics ;-)
 
