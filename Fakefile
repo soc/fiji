@@ -356,6 +356,7 @@ CLASSPATH(jars/ij.jar)=jars/javac.jar
 CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.jar
 LIBS(plugins/JNI_Example.jar)=-lm
 CLASSPATH(plugins/JNI_Example.jar)=jars/ij.jar:jars/fiji-lib.jar
+CLASSPATH(plugins/Reconstruct_Reader.jar)=plugins/TrakEM2_.jar
 
 # pom.xml sub-projects
 
