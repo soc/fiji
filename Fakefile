@@ -395,7 +395,6 @@ CLASSPATH(plugins/IsoData_Classifier.jar)=jars/ij.jar
 CLASSPATH(plugins/ToAST_.jar)=jars/ij.jar
 CLASSPATH(plugins/CPU_Meter.jar)=jars/jna.jar:jars/ij.jar
 CLASSPATH(plugins/M_I_P.jar)=jars/ij.jar
-CLASSPATH(plugins/level_sets.jar)=jars/ij.jar
 CLASSPATH(plugins/Anisotropic_Diffusion_2D.jar)=jars/ij.jar
 CLASSPATH(plugins/SplineDeformationGenerator_.jar)=jars/ij.jar
 CLASSPATH(plugins/Manual_Tracking.jar)=jars/ij.jar:plugins/Image_5D.jar
@@ -480,6 +479,7 @@ plugins/AnalyzeSkeleton_.jar <- src-plugins/AnalyzeSkeleton_/pom.xml
 plugins/VIB_.jar <- src-plugins/VIB_/pom.xml
 plugins/Simple_Neurite_Tracer.jar <- src-plugins/Simple_Neurite_Tracer/pom.xml
 plugins/Fiji_Plugins.jar <- src-plugins/Fiji_Plugins/pom.xml
+plugins/level_sets.jar <- src-plugins/level_sets/pom.xml
 
 # pre-Java5 generics ;-)
 

@@ -40,6 +40,7 @@
 		<module>VIB_</module>
 		<module>Simple_Neurite_Tracer</module>
 		<module>Fiji_Plugins</module>
+		<module>level_sets</module>
 	</modules>
 
 	<properties>
