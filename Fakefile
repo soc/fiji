@@ -375,7 +375,6 @@ CLASSPATH(plugins/loci_tools.jar)=jars/ij.jar
 CLASSPATH(jars/batik.jar)=jars/jacl.jar:plugins/loci_tools.jar:jars/jython.jar
 CLASSPATH(plugins/RATS_.jar)=jars/ij.jar
 CLASSPATH(jars/ij.jar)=jars/javac.jar
-CLASSPATH(plugins/Calculator_Plus.jar)=jars/ij.jar
 CLASSPATH(plugins/QuickPALM_.jar)=jars/ij.jar
 CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.jar
 CLASSPATH(plugins/3D_Objects_Counter.jar)=jars/ij.jar
@@ -477,6 +476,7 @@ plugins/LocalThickness_.jar <- src-plugins/LocalThickness_/pom.xml
 plugins/Script_Editor.jar <- src-plugins/Script_Editor/pom.xml
 plugins/Fiji_Developer.jar <- src-plugins/Fiji_Developer/pom.xml
 plugins/Manual_Tracking.jar <- src-plugins/Manual_Tracking/pom.xml
+plugins/Calculator_Plus.jar <- src-plugins/Calculator_Plus/pom.xml
 
 # pre-Java5 generics ;-)
 
