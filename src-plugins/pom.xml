@@ -28,6 +28,7 @@
 		<module>fiji-compat</module>
 		<module>fiji-scripting</module>
 		<module>Jython_Interpreter</module>
+		<module>Clojure_Interpreter</module>
 	</modules>
 
 	<properties>
