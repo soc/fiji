@@ -91,6 +91,7 @@
 		<module>imagescience</module>
 		<module>Trainable_Segmentation</module>
 		<module>IsoData_Classifier</module>
+		<module>RATS_</module>
 	</modules>
 
 	<properties>

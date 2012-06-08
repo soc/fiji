@@ -368,7 +368,6 @@ CLASSPATH(jars/autocomplete.jar)=jars/rsyntaxtextarea.jar
 CLASSPATH(jars/jython.jar)=jars/junit.jar:jars/jna.jar
 CLASSPATH(plugins/loci_tools.jar)=jars/ij.jar
 CLASSPATH(jars/batik.jar)=jars/jacl.jar:plugins/loci_tools.jar:jars/jython.jar
-CLASSPATH(plugins/RATS_.jar)=jars/ij.jar
 CLASSPATH(jars/ij.jar)=jars/javac.jar
 CLASSPATH(plugins/QuickPALM_.jar)=jars/ij.jar
 CLASSPATH(plugins/ij-ImageIO_.jar)=jars/ij.jar:jars/jai_core.jar:jars/jai_codec.jar
@@ -476,6 +475,7 @@ plugins/Anisotropic_Diffusion_2D.jar <- src-plugins/Anisotropic_Diffusion_2D/pom
 jars/imagescience.jar <- src-plugins/imagescience/pom.xml
 plugins/Trainable_Segmentation.jar <- src-plugins/Trainable_Segmentation/pom.xml
 plugins/IsoData_Classifier.jar <- src-plugins/IsoData_Classifier/pom.xml
+plugins/RATS_.jar <- src-plugins/RATS_/pom.xml
 
 # pre-Java5 generics ;-)
 
