@@ -354,7 +354,6 @@ CLASSPATH(plugins/TopoJ_.jar)=jars/ij.jar:jars/Jama.jar
 CLASSPATH(plugins/TransformJ_.jar)=jars/ij.jar:jars/imagescience.jar
 CLASSPATH(plugins/FeatureJ_.jar)=jars/ij.jar:jars/imagescience.jar
 CLASSPATH(plugins/RandomJ_.jar)=jars/ij.jar:jars/imagescience.jar
-CLASSPATH(plugins/CPU_Meter.jar)=jars/jna.jar:jars/ij.jar
 CLASSPATH(jars/autocomplete.jar)=jars/rsyntaxtextarea.jar
 CLASSPATH(jars/jython.jar)=jars/junit.jar:jars/jna.jar
 CLASSPATH(plugins/loci_tools.jar)=jars/ij.jar
@@ -473,6 +472,7 @@ plugins/Algorithm_Launcher.jar <- src-plugins/Algorithm_Launcher/pom.xml
 plugins/SPIM_Opener.jar <- src-plugins/SPIM_Opener/pom.xml
 plugins/SPIM_Registration.jar <- src-plugins/SPIM_Registration/pom.xml
 plugins/QuickPALM_.jar <- src-plugins/QuickPALM_/pom.xml
+plugins/CPU_Meter.jar <- src-plugins/CPU_Meter/pom.xml
 
 # pre-Java5 generics ;-)
 

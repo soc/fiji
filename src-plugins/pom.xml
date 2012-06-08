@@ -99,6 +99,7 @@
 		<module>SPIM_Opener</module>
 		<module>SPIM_Registration</module>
 		<module>QuickPALM_</module>
+		<module>CPU_Meter</module>
 	</modules>
 
 	<properties>
