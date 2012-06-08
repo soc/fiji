@@ -70,6 +70,7 @@
 		<module>Series_Labeler</module>
 		<module>Statistical_Region_Merging</module>
 		<module>fake</module>
+		<module>Refresh_Javas</module>
 	</modules>
 
 	<properties>
