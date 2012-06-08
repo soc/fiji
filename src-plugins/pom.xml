@@ -106,6 +106,7 @@
 		<module>MosaicJ_</module>
 		<module>PointPicker_</module>
 		<module>SheppLogan_</module>
+		<module>StackReg_</module>
 	</modules>
 
 	<properties>
