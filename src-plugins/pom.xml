@@ -73,6 +73,7 @@
 		<module>Refresh_Javas</module>
 		<module>Auto_Threshold</module>
 		<module>Arrow_</module>
+		<module>Stack_Manipulation</module>
 	</modules>
 
 	<properties>

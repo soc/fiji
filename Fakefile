@@ -384,7 +384,6 @@ CLASSPATH(plugins/PIV_analyser.jar)=jars/ij.jar
 CLASSPATH(plugins/loci_tools.jar)=jars/ij.jar
 CLASSPATH(plugins/LocalThickness_.jar)=jars/ij.jar
 CLASSPATH(jars/batik.jar)=jars/jacl.jar:plugins/loci_tools.jar:jars/jython.jar
-CLASSPATH(plugins/Stack_Manipulation.jar)=jars/ij.jar
 CLASSPATH(plugins/RATS_.jar)=jars/ij.jar
 CLASSPATH(jars/ij.jar)=jars/javac.jar
 CLASSPATH(plugins/Calculator_Plus.jar)=jars/ij.jar
@@ -478,6 +477,7 @@ jars/fake.jar <- src-plugins/fake/pom.xml
 plugins/Refresh_Javas.jar <- src-plugins/Refresh_Javas/pom.xml
 plugins/Auto_Threshold.jar <- src-plugins/Auto_Threshold/pom.xml
 plugins/Arrow_.jar <- src-plugins/Arrow_/pom.xml
+plugins/Stack_Manipulation.jar <- src-plugins/Stack_Manipulation/pom.xml
 
 # pre-Java5 generics ;-)
 
