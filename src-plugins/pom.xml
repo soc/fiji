@@ -89,6 +89,7 @@
 		<module>3D_Objects_Counter</module>
 		<module>Anisotropic_Diffusion_2D</module>
 		<module>imagescience</module>
+		<module>Trainable_Segmentation</module>
 	</modules>
 
 	<properties>
