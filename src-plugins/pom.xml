@@ -41,6 +41,7 @@
 		<module>Simple_Neurite_Tracer</module>
 		<module>Fiji_Plugins</module>
 		<module>level_sets</module>
+		<module>blockmatching_</module>
 	</modules>
 
 	<properties>
