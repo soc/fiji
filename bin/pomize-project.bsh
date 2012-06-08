@@ -122,7 +122,7 @@ String[] groupAndVersionMappings = {
 	"com.fifesoft:autocomplete:0.4",
 	"com.fifesoft:rsyntaxtextarea:1.4.1",
 	"com.itextpdf:itextpdf:5.1.1",
-	"com.jcraft:jsch:0.1.37",
+	"com.jcraft:jsch:0.1.42",
 	"com.jcraft:jzlib:1.0.7",
 	"edu.mines:mines-jtk:20100113",
 	"jama:Jama:1.0.2",
@@ -162,7 +162,8 @@ String[] groupAndVersionMappings = {
 	"org.jruby:jruby:1.6.7.2",
 	"org.python:jython:2.5.2",
 	"rhino:js:1.7R2",
-	"fiji::${imagej.version}"
+	// fall-back
+	"sc.fiji::${imagej.version}"
 };
 
 String[] getGroupIdAndVersion(String artifact) {
@@ -225,13 +226,13 @@ void writePOM(String target, Rule rule) {
 		+ "\t<modelVersion>4.0.0</modelVersion>\n"
 		+ "\n"
 		+ "\t<parent>\n"
-		+ "\t\t<groupId>fiji</groupId>\n"
+		+ "\t\t<groupId>sc.fiji</groupId>\n"
 		+ "\t\t<artifactId>pom-fiji-plugins</artifactId>\n"
 		+ "\t\t<version>2.0.0-SNAPSHOT</version>\n"
 		+ "\t</parent>\n"
 		+ "\n"
 		+ "\t<artifactId>" + artifact + "</artifactId>\n"
-		+ (groupAndVersion[0].equals("fiji") ? "" : "\t<groupId>" + groupAndVersion[0] + "</groupId>\n")
+		+ (groupAndVersion[0].equals("sc.fiji") ? "" : "\t<groupId>" + groupAndVersion[0] + "</groupId>\n")
 		+ (groupAndVersion[1].equals("${imagej.version}") ? "" : "\t<version>" + groupAndVersion[1] + "</version>\n")
 		+ "\n"
 		+ "\t<name>" + target + "</name>\n"
