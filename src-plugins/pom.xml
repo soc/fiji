@@ -34,6 +34,7 @@
 		<module>fiji-lib</module>
 		<module>3D_Viewer</module>
 		<module>bUnwarpJ_</module>
+		<module>Lasso_and_Blow_Tool</module>
 	</modules>
 
 	<properties>

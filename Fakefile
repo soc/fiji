@@ -438,7 +438,6 @@ CLASSPATH(jars/mij.jar)=jars/ij.jar
 CLASSPATH(plugins/Differentials_.jar)=jars/ij.jar
 CLASSPATH(plugins/StackReg_.jar)=jars/ij.jar
 CLASSPATH(plugins/PointPicker_.jar)=jars/ij.jar
-CLASSPATH(plugins/Lasso_and_Blow_Tool.jar)=jars/ij.jar:jars/fiji-lib.jar
 CLASSPATH(plugins/Linear_Kuwahara.jar)=jars/ij.jar
 CLASSPATH(plugins/Thread_Killer.jar)=jars/ij.jar
 CLASSPATH(plugins/MosaicJ_.jar)=jars/ij.jar
@@ -480,6 +479,7 @@ plugins/BeanShell_Interpreter.jar <- src-plugins/BeanShell_Interpreter/pom.xml
 jars/fiji-lib.jar <- src-plugins/fiji-lib/pom.xml
 plugins/3D_Viewer.jar <- src-plugins/3D_Viewer/pom.xml
 plugins/bUnwarpJ_.jar <- src-plugins/bUnwarpJ_/pom.xml
+plugins/Lasso_and_Blow_Tool.jar <- src-plugins/Lasso_and_Blow_Tool/pom.xml
 
 # pre-Java5 generics ;-)
 
