@@ -396,7 +396,6 @@ CLASSPATH(plugins/Statistical_Region_Merging.jar)=jars/ij.jar
 CLASSPATH(plugins/PIV_analyser.jar)=jars/ij.jar
 CLASSPATH(plugins/Color_Inspector_3D.jar)=jars/ij.jar
 CLASSPATH(plugins/MTrack2_.jar)=jars/ij.jar
-CLASSPATH(plugins/Color_Histogram.jar)=jars/ij.jar
 CLASSPATH(plugins/loci_tools.jar)=jars/ij.jar
 CLASSPATH(plugins/LocalThickness_.jar)=jars/ij.jar
 CLASSPATH(plugins/Volume_Viewer.jar)=jars/ij.jar
@@ -479,6 +478,7 @@ plugins/LSM_Reader.jar <- src-plugins/LSM_Reader/pom.xml
 plugins/LSM_Toolbox.jar <- src-plugins/LSM_Toolbox/pom.xml
 plugins/SplineDeformationGenerator_.jar <- src-plugins/SplineDeformationGenerator_/pom.xml
 plugins/Analyze_Reader_Writer.jar <- src-plugins/Analyze_Reader_Writer/pom.xml
+plugins/Color_Histogram.jar <- src-plugins/Color_Histogram/pom.xml
 
 # pre-Java5 generics ;-)
 

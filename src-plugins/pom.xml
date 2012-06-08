@@ -52,6 +52,7 @@
 		<module>LSM_Toolbox</module>
 		<module>SplineDeformationGenerator_</module>
 		<module>Analyze_Reader_Writer</module>
+		<module>Color_Histogram</module>
 	</modules>
 
 	<properties>
