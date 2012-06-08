@@ -88,6 +88,7 @@
 		<module>Calculator_Plus</module>
 		<module>3D_Objects_Counter</module>
 		<module>Anisotropic_Diffusion_2D</module>
+		<module>imagescience</module>
 	</modules>
 
 	<properties>
