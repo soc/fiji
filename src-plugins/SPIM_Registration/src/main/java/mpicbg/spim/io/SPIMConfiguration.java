@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FilenameFilter;
 import java.util.ArrayList;
 
+import fiji.plugin.TransformationModel;
+
 import mpicbg.imglib.container.ContainerFactory;
 import mpicbg.imglib.container.array.ArrayContainerFactory;
 import mpicbg.imglib.interpolation.InterpolatorFactory;
@@ -49,7 +51,7 @@ public class SPIMConfiguration
 	public boolean showImageJWindow = false;
 	public boolean multiThreadedOpening = false;
 	public boolean collectRegistrationStatistics = false;
-	public String transformationModel = "Affine";
+	public TransformationModel transformationModel = TransformationModel.AFFINE;
 	// time lapse
 	public boolean timeLapseRegistration = false;
 	public int referenceTimePoint = 1;
@@ -166,12 +168,7 @@ public class SPIMConfiguration
 
     public AbstractAffineModel3D getModel()
     {
-		if ( transformationModel.equals( "Translation" ) )
-			return new TranslationModel3D();
-		else if ( transformationModel.equals( "Rigid" ) )
-			return new RigidModel3D();
-		else
-			return new AffineModel3D();
+		return transformationModel.getModel();
     }
 
     public int getIndexForTimePoint( final int timepoint )

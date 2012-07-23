@@ -42,8 +42,7 @@ public class Bead_Registration implements PlugIn
 	final private String myURL = "http://fly.mpi-cbg.de/preibisch";
 	final private String paperURL = "http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html";
 
-	final String beadRegistration[] = new String[] { "Single-channel", "Multi-channel (same beads visible in different channels)" };
-	static int defaultBeadRegistration = 0;
+	static BeadRegistrationType beadRegistration;
 	
 	@Override
 	public void run(String arg0) 
@@ -53,7 +52,7 @@ public class Bead_Registration implements PlugIn
 		
 		final GenericDialog gd = new GenericDialog( "Bead based registration" );
 		
-		gd.addChoice( "Select type of registration", beadRegistration, beadRegistration[ defaultBeadRegistration ] );		
+		gd.addChoice( "Select type of registration", BeadRegistrationType.descriptions, BeadRegistrationType.DEFAULT.description );		
 		gd.addMessage( "Please note that the SPIM Registration is based on a publication.\n" +
 						"If you use it successfully for your research please be so kind to cite our work:\n" +
 						"Preibisch et al., Nature Methods (2010), 7(6):418-419\n" );
@@ -66,15 +65,19 @@ public class Bead_Registration implements PlugIn
 		if ( gd.wasCanceled() )
 			return;
 		
-		final int choice = gd.getNextChoiceIndex();
-		defaultBeadRegistration = choice;
+		final BeadRegistrationType choice = BeadRegistrationType.byDescription(gd.getNextChoice());
+		beadRegistration = choice;
 		
 		final SPIMConfiguration conf;
 
-		if ( choice == 0 )
-			conf = singleChannel();
-		else
-			conf = multiChannel();
+		switch (choice) {
+			case SINGLE_CHANNEL:
+				conf = singleChannel(); break;
+			case MULTI_CHANNEL:
+				conf = multiChannel(); break;
+			default:
+				throw new UnsupportedOperationException();
+		}
 		
 		// cancelled
 		if ( conf == null )
@@ -143,14 +146,12 @@ public class Bead_Registration implements PlugIn
 	public static String angles = "0-270:45";
 	
 	public static boolean loadSegmentation = false;
-	public static String[] beadBrightness = { "Very weak", "Weak", "Comparable to Sample", "Strong", "Advanced ...", "Interactive ..." };	
-	public static int defaultBeadBrightness = 1;
+	public static BeadBrightness beadBrightness;
 	public static boolean overrideResolution = false;
 	public static double xyRes = 0.73;
 	public static double zRes = 2;
 
-	final String model[] = new String[] { "Translation", "Rigid", "Affine" };
-	public static int defaultModel = 2;
+	public static TransformationModel transformationModel = TransformationModel.AFFINE;
 	public static boolean loadRegistration = false;
 	public static boolean timeLapseRegistration = false;
 	final String timeLapseRegistrationTypes[] = new String[] { "Manually", "Automatically" };
@@ -175,7 +176,7 @@ public class Bead_Registration implements PlugIn
 		gd.addMessage( "" );		
 		
 		gd.addCheckbox( "Re-use_segmented_beads", loadSegmentation );
-		gd.addChoice( "Bead_brightness", beadBrightness, beadBrightness[ defaultBeadBrightness ] );
+		gd.addChoice( "Bead_brightness", BeadBrightness.descriptions, BeadBrightness.DEFAULT.description );
 		gd.addCheckbox( "Override_file_dimensions", overrideResolution );
 		final Checkbox dimensionsBox = (Checkbox)gd.getCheckboxes().lastElement();
 		gd.addNumericField( "xy_resolution (um/px)", xyRes, 3 );
@@ -185,7 +186,7 @@ public class Bead_Registration implements PlugIn
 		
 		gd.addMessage( "" );		
 		
-		gd.addChoice( "Transformation_model", model, model[ defaultModel ] );
+		gd.addChoice( "Transformation_model", TransformationModel.descriptions, TransformationModel.AFFINE.description );
 		gd.addCheckbox( "Re-use_per_timepoint_registration", loadRegistration );
 
 		gd.addMessage( "" );		
@@ -282,12 +283,12 @@ public class Bead_Registration implements PlugIn
 		angles = gd.getNextString();
 		
 		loadSegmentation = gd.getNextBoolean();
-		defaultBeadBrightness = gd.getNextChoiceIndex();
+		beadBrightness = BeadBrightness.byDescription(gd.getNextChoice());
 		overrideResolution = gd.getNextBoolean();
 		xyRes = gd.getNextNumber();
 		zRes = gd.getNextNumber();
 		
-		defaultModel = gd.getNextChoiceIndex();
+		transformationModel = TransformationModel.byDescription(gd.getNextChoice());
 		loadRegistration = gd.getNextBoolean();
 		
 		timeLapseRegistration = gd.getNextBoolean();
@@ -303,20 +304,14 @@ public class Bead_Registration implements PlugIn
 
 		if ( !loadSegmentation )
 		{
-			if ( defaultBeadBrightness == 0 )
-				conf.minPeakValue[ 0 ] = 0.001f;
-			else if ( defaultBeadBrightness == 1 )
-				conf.minPeakValue[ 0 ] = 0.008f;
-			else if ( defaultBeadBrightness == 2 )
-				conf.minPeakValue[ 0 ] = 0.03f;
-			else if ( defaultBeadBrightness == 3 )
-				conf.minPeakValue[ 0 ] = 0.1f;
+			if ( beadBrightness.ordinal() <= BeadBrightness.STRONG.ordinal() )
+				conf.minPeakValue[ 0 ] = beadBrightness.getMinPeakValue();
 			else
 			{
 				// open advanced bead brightness detection
 				final double[] values;
 
-				if ( defaultBeadBrightness == 4 )
+				if ( beadBrightness == BeadBrightness.ADVANCED )
 					values = getAdvancedDoGParameters( new int[ 1 ] )[ 0 ];
 				else
 				{
@@ -361,22 +356,7 @@ public class Bead_Registration implements PlugIn
 		conf.readSegmentation = loadSegmentation;
 		conf.readRegistration = loadRegistration;
 
-		if ( defaultModel == 0 )
-		{
-			conf.transformationModel = "Translation";
-			conf.max_epsilon = 10;
-			conf.numIterations = 10000;
-		}
-		else if ( defaultModel == 1 )
-		{
-			conf.transformationModel = "Rigid";
-			conf.max_epsilon = 7;
-			conf.numIterations = 10000;
-		}
-		else
-		{
-			conf.transformationModel = "Affine";
-		}
+		setModel(conf, transformationModel);
 		
 		conf.registerOnly = true;
 		conf.timeLapseRegistration = timeLapseRegistration;
@@ -386,7 +366,7 @@ public class Bead_Registration implements PlugIn
 
 	public static String fileNamePatternMC = "spim_TL{t}_Channel{c}_Angle{a}.lsm";
 	public static String channelsBeadsMC = "0, 1";
-	public static int[] defaultBeadBrightnessMC = null;
+	public static BeadBrightness[] beadBrightnessMC;
 
 	public SPIMConfiguration multiChannel()
 	{
@@ -408,7 +388,7 @@ public class Bead_Registration implements PlugIn
 
 		gd.addMessage( "" );
 
-		gd.addChoice( "Transformation_model", model, model[ defaultBeadBrightness ] );
+		gd.addChoice( "Transformation_model", TransformationModel.descriptions, TransformationModel.RIGID.description ); //bead brightness
 		gd.addCheckbox( "Re-use_per_timepoint_registration", loadRegistration );
 
 		gd.addMessage( "" );
@@ -438,7 +418,7 @@ public class Bead_Registration implements PlugIn
 		xyRes = gd.getNextNumber();
 		zRes = gd.getNextNumber();
 
-		defaultModel = gd.getNextChoiceIndex();
+		transformationModel = TransformationModel.byDescription(gd.getNextChoice());
 		loadRegistration = gd.getNextBoolean();
 
 		timeLapseRegistration = gd.getNextBoolean();
@@ -493,17 +473,17 @@ public class Bead_Registration implements PlugIn
 		// individually for each channel
 		if ( !loadSegmentation && !loadRegistration )
 		{
-			if ( defaultBeadBrightnessMC == null || defaultBeadBrightness != numChannels )
+			if ( beadBrightnessMC == null || beadBrightness.ordinal() != numChannels )
 			{
-				defaultBeadBrightnessMC = new int[ numChannels ];
+				beadBrightnessMC = new BeadBrightness[ numChannels ];
 				for ( int c = 0; c < numChannels; ++c )
-					defaultBeadBrightnessMC[ c ] = 1;
+					beadBrightnessMC[ c ] = BeadBrightness.DEFAULT;
 			}
 
 			final GenericDialogPlus gd2 = new GenericDialogPlus( "Bead Brightness for Multi Channel Registration" );
 
 			for ( int c = 0; c < numChannels; ++c )
-				gd2.addChoice( "Bead_brightness_channel_" + channels.get( c ), beadBrightness, beadBrightness[ defaultBeadBrightnessMC[ c ] ] );
+				gd2.addChoice( "Bead_brightness_channel_" + channels.get( c ), BeadBrightness.descriptions, beadBrightnessMC[ c ].description );
 
 			gd2.showDialog();
 
@@ -515,26 +495,27 @@ public class Bead_Registration implements PlugIn
 
 			for ( int c = 0; c < numChannels; ++c )
 			{
-				defaultBeadBrightnessMC[ c ] = gd2.getNextChoiceIndex();
-
-				if ( defaultBeadBrightnessMC[ c ] == 0 )
-					conf.minPeakValue[ c ] = 0.001f;
-				else if ( defaultBeadBrightnessMC[ c ] == 1 )
-					conf.minPeakValue[ c ] = 0.008f;
-				else if ( defaultBeadBrightnessMC[ c ] == 2 )
-					conf.minPeakValue[ c ] = 0.03f;
-				else if ( defaultBeadBrightnessMC[ c ] == 3 )
-					conf.minPeakValue[ c ] = 0.1f;
-				else if ( defaultBeadBrightnessMC[ c ] == 4 )
-					advanced++;
-				else
-					interactive++;
+				beadBrightnessMC[ c ] = BeadBrightness.byDescription(gd2.getNextChoice());
+				
+				switch(beadBrightnessMC[ c ]) {
+					case VERY_WEAK:
+					case WEAK:
+					case COMPARABLE_TO_SAMPLE:
+					case STRONG:
+						conf.minPeakValue[ 0 ] = beadBrightness.getMinPeakValue(); break;
+					case ADVANCED:
+						advanced++; break;
+					case INTERACTIVE:
+						interactive++; break;
+					default:
+						throw new UnsupportedOperationException("Unknown BeadBrightness value!");		
+				}
 			}
 
 			// get the interactive values for all channels
 			if ( interactive > 0 )
 				for ( int c = 0; c < numChannels; ++c )
-					if ( defaultBeadBrightnessMC[ c ] == 5 )
+					if ( beadBrightnessMC[ c ] == BeadBrightness.INTERACTIVE )
 					{
 						final double[] values = new double[] { conf.initialSigma[ c ], conf.minPeakValue[ c ] };
 
@@ -552,7 +533,7 @@ public class Bead_Registration implements PlugIn
 
 				// do all advanced parameters in one dialog
 				for ( int c = 0; c < numChannels; ++c )
-					if ( defaultBeadBrightnessMC[ c ] == 4 )
+					if ( beadBrightnessMC[ c ] == BeadBrightness.ADVANCED )
 						channelIndices[ count++ ] = channels.get( c );
 
 				final double[][] values = getAdvancedDoGParameters( channelIndices );
@@ -560,7 +541,7 @@ public class Bead_Registration implements PlugIn
 				// write them to the configuration
 				count = 0;
 				for ( int c = 0; c < numChannels; ++c )
-					if ( defaultBeadBrightnessMC[ c ] == 4 )
+					if ( beadBrightnessMC[ c ] == BeadBrightness.ADVANCED )
 					{
 						conf.initialSigma[ c ] = (float)values[ count ][ 0 ];
 						conf.minPeakValue[ c ] = (float)values[ count++ ][ 1 ];
@@ -587,27 +568,32 @@ public class Bead_Registration implements PlugIn
 		conf.readSegmentation = loadSegmentation;
 		conf.readRegistration = loadRegistration;
 		
-		if ( defaultModel == 0 )
-		{
-			conf.transformationModel = "Translation";
-			conf.max_epsilon = 10;
-			conf.numIterations = 10000;
-		}
-		else if ( defaultModel == 1 )
-		{
-			conf.transformationModel = "Rigid";
-			conf.max_epsilon = 7;
-			conf.numIterations = 10000;
-		}
-		else
-		{
-			conf.transformationModel = "Affine";
-		}
+		setModel(conf, transformationModel);
 
 		conf.registerOnly = true;
 		conf.timeLapseRegistration = timeLapseRegistration;
 
 		return conf;
+	}
+	
+	static void setModel(SPIMConfiguration conf, TransformationModel model) {
+		if ( model == TransformationModel.TRANSLATION )
+		{
+			conf.transformationModel = TransformationModel.TRANSLATION;
+			conf.max_epsilon = 10;
+			conf.numIterations = 10000;
+		}
+		else if ( model == TransformationModel.RIGID )
+		{
+			conf.transformationModel = TransformationModel.RIGID;
+			conf.max_epsilon = 7;
+			conf.numIterations = 10000;
+		}
+		else
+		{
+			conf.transformationModel = TransformationModel.AFFINE;
+		}
+		
 	}
 	
 	static double[][] dogParameters = null;
@@ -724,7 +710,7 @@ public class Bead_Registration implements PlugIn
 		}
 	}
 
-	protected static boolean init( final SPIMConfiguration conf )
+	public static boolean init( final SPIMConfiguration conf )
 	{
 		// check the directory string
 		conf.inputdirectory = conf.inputdirectory.replace('\\', '/');
